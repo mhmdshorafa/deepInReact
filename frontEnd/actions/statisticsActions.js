@@ -1,7 +1,7 @@
 const axios = require('axios')
 const getDevices = () => {
   return new Promise((resolve) => {
-    axios('http://deep-in.herokuapp.com/api/devices', {
+    axios('https://deep-in.herokuapp.com/api/devices', {
       method: 'GET',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -20,7 +20,7 @@ const getDevices = () => {
 
 const getStatistics = () => {
   return new Promise((resolve) => {
-    axios('http://deep-in.herokuapp.com/api/statistics', {
+    axios('https://deep-in.herokuapp.com/api/statistics', {
       method: 'GET',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -39,7 +39,7 @@ const getStatistics = () => {
 
 const getTraffic = () => {
   return new Promise((resolve) => {
-    axios('http://deep-in.herokuapp.com/api/pagesVisits', {
+    axios('https://deep-in.herokuapp.com/api/pagesVisits', {
       method: 'GET',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -58,7 +58,7 @@ const getTraffic = () => {
 
 const getClicks = () => {
   return new Promise((resolve) => {
-    axios('http://deep-in.herokuapp.com/api/clicks', {
+    axios('https://deep-in.herokuapp.com/api/clicks', {
       method: 'GET',
       headers: {
         'Accept': 'application/json, text/plain, */*',
